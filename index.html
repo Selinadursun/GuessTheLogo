@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Guess the Logo</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="guess-the-logo.png">
+</head>
+
+<body>
+
+  <!-- Startscherm -->
+  <section id="startScherm">
+    <h1>Welkom bij Guess the Logo</h1>
+    <button id="startKnop">Start Spel</button>
+  </section>
+
+
+  <!-- Spelscherm -->
+  <section id="spelScherm" class="hidden">
+    <h1>Guess the Logo</h1>
+    <p class="timer">Tijd: 10 seconden</p>
+    <p id="score">Score: 0</p>
+    <p id="pogingen">Pogingen over: 3</p>
+    <img id="logoAfbeelding" src="images/placeholder.png" alt="Logo" width="200">
+    <input type="text" id="gokInput" placeholder="Typ het merk...">
+    <button id="controleerKnop">Check</button>
+    <p id="feedback" class="feedback hidden"></p>
+  </section>
+
+  <!-- Win-scherm -->
+  <section id="winScherm" class="hidden">
+    <h1>Je hebt gewonnen!</h1>
+    <p>Gefeliciteerd!</p>
+    <button class="herstartKnop">Opnieuw Spelen</button>
+    <button id="exitWinKnop">Exit naar Startpagina</button>
+  </section>
+
+  <!-- Game Over-scherm -->
+  <section id="gameOverScherm" class="hidden">
+    <h1>Game Over</h1>
+    <p>Probeer het opnieuw!</p>
+    <button class="herstartKnop">Opnieuw Spelen</button>
+    <button id="exitGameOverKnop">Exit naar Startpagina</button>
+  </section>
+
+  <script src="index.js" defer></script>
+
+  <!-- Achtergrondmuziek -->
+  <!-- Muziekbron: https://www.fesliyanstudios.com - "8-bit Adventure" door David Fesliyan -->
+  <audio id="muziek" loop>
+    <source src="audio/8bit-adventure.mp3" type="audio/mpeg">
+  </audio>
+
+</body>
+
+</html>
