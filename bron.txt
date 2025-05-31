@@ -4,6 +4,9 @@ https://www.w3schools.com/jsref/jsref_trim_string.asp
 bron .toLowerCas|():
 https://javascript.info/string
 
+bron ForEach :
+https://wpshout.com/snippets/add-event-listener-to-multiple-elements-with-javascript/#gref 
+
 bron audio afspelen:
 https://www.geeksforgeeks.org/how-to-play-audio-in-javascript/
 
