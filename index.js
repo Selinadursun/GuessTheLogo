@@ -191,6 +191,8 @@ function gaNaarStart() {
 }
 
 // Eventlisteners koppelen aan knoppen
+//-- bron ForEach: https://wpshout.com/snippets/add-event-listener-to-multiple-elements-with-javascript/#gref --//
+//-- prompt bron:"addEventListener multiple buttons JavaScript" --//
 startKnop.addEventListener("click", startSpel);
 herstartKnoppen.forEach(knop => knop.addEventListener("click", startSpel));
 controleerKnop.addEventListener("click", controleerGok);
